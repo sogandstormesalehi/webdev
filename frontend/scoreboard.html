@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Scoreboard</h1>
+
+        <table class="scoreboard-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Score</th>
+                    <th>Following Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Player A</td>
+                    <td>500</td>
+                    <td><button class="follow-button" data-player="Player A">Unfollow</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Player B</td>
+                    <td>480</td>
+                    <td><button class="follow-button" data-player="Player B">Follow</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Player C</td>
+                    <td>460</td>
+                    <td><button class="follow-button" data-player="Player C">Unfollow</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Player D</td>
+                    <td>440</td>
+                    <td><button class="follow-button" data-player="Player D">Follow</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Player E</td>
+                    <td>420</td>
+                    <td><button class="follow-button" data-player="Player E">Unfollow</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Player F</td>
+                    <td>400</td>
+                    <td><button class="follow-button" data-player="Player F">Follow</button></td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+        <button class="back-button" onclick="window.location.href='player.html'">Back to Player Dashboard</button>
+        <div class="toggle-container">
+            <input type="checkbox" id="night-mode-toggle" class="toggle-checkbox">
+            <label for="night-mode-toggle" class="toggle-label"></label>
+        </div>
+    </div>
+
+    <script>
+        function followPlayer(playerName) {
+            alert(`Following ${playerName}`);
+        }
+    </script>
+</body>
+</html>

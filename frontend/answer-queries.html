@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Queries</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Available Queries</h1>
+
+        <div class="form-group">
+            <p for="category-select">Filter by Category:</p>
+            <select id="category-select">
+                <option value="all" selected>All</option>
+                <option value="cats">Cats</option>
+                <option value="geography">Geography</option>
+                <option value="space">Space</option>
+            </select>
+        </div>
+
+        <button id="random-query-btn" class="random-query-btn">Answer Random Query</button>
+
+        <div class="query-card-container">
+            <div class="query-card" data-category="cats">
+                <h3>Query 1</h3>
+                <p>Who is the best cat ever?</p>
+                <select>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Gucci">Gucci</option>
+                    <option value="hdu">HOW DARE YOU</option>
+                </select>
+                <button>Submit Answer</button>
+            </div>
+            <div class="query-card" data-category="cats">
+                <h3>Query 2</h3>
+                <p>Who is the cutest cat ever?</p>
+                <select>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Gucci">Gucci</option>
+                    <option value="hdu">HOW DARE YOU</option>
+                </select>
+                <button>Submit Answer</button>
+            </div>
+            <div class="query-card" data-category="cats">
+                <h3>Query 3</h3>
+                <p>Who is the prettiest cat ever?</p>
+                <select>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Gucci">Gucci</option>
+                    <option value="hdu">HOW DARE YOU</option>
+                </select>
+                <button>Submit Answer</button>
+            </div>
+            <div class="query-card" data-category="geography">
+                <h3>Query 4</h3>
+                <p>What is the capital of France?</p>
+                <select>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Berlin">Berlin</option>
+                    <option value="Paris">Paris</option>
+                </select>
+                <button>Submit Answer</button>
+            </div>
+            <div class="query-card" data-category="space">
+                <h3>Query 5</h3>
+                <p>What is the largest planet in our solar system?</p>
+                <select>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Jupiter">Jupiter</option>
+                    <option value="Saturn">Saturn</option>
+                </select>
+                <button>Submit Answer</button>
+            </div>
+        </div>
+
+        <div class="answered-queries">
+            <h2>Previously Answered</h2>
+            <div class="answered-query-card">
+                <h3>Query 12</h3>
+                <p>What is the capital of France?</p>
+                <p><strong>Your Answer:</strong> Berlin</p>
+                <p><strong>Correct Answer:</strong> Paris</p>
+                <p><strong>Score:</strong> 0/45</p>
+            </div>
+            <div class="answered-query-card">
+                <h3>Query 21</h3>
+                <p>What is the largest planet in our solar system?</p>
+                <p><strong>Your Answer:</strong> Jupiter</p>
+                <p><strong>Correct Answer:</strong> Jupiter</p>
+                <p><strong>Score:</strong> 30/30</p>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='player.html'">Back to Player Dashboard</button>
+        <div class="toggle-container">
+            <input type="checkbox" id="night-mode-toggle" class="toggle-checkbox">
+            <label for="night-mode-toggle" class="toggle-label"></label>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Player Dashboard</h1>
+
+        <div class="card-container">
+            <div class="card">
+                <h2>Scoreboard</h2>
+                <ul>
+                    <li>1. Player A - 500 Points</li>
+                    <li>2. Player B - 450 Points</li>
+                    <li>3. Player C - 400 Points</li>
+                </ul>
+                <button onclick="window.location.href='scoreboard.html'">Go to Scoreboard</button>
+            </div>
+
+            <div class="card">
+                <h2>Answer Queries</h2>
+                <ul>
+                    <li>Query 1 (Recent)</li>
+                    <li>Query 2 (Recent)</li>
+                    <li>Query 3 (Recent)</li>
+                </ul>
+                <button onclick="window.location.href='answer-queries.html'">Go to Answer Queries</button>
+            </div>
+            <div class="card">
+                <h2>Show Designers</h2>
+                <ul>
+                    <li>Mio (Recent)</li>
+                    <li>Meow (Recent)</li>
+                    <li>Miaw (Recent)</li>
+                </ul>
+                <button onclick="window.location.href='designerboard.html'">Go to Designers Board</button>
+            </div>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="night-mode-toggle" class="toggle-checkbox">
+            <label for="night-mode-toggle" class="toggle-label"></label>
+        </div>
+    </div>
+</body>
+</html>

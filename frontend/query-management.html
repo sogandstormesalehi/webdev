@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <h1>Create New Query</h1>
+        
+            <div class="form-section">
+                <h4>Enter your question</h4>
+                <input type="text" id="new-query-text" placeholder="Enter your question">
+            </div>
+        
+            <div class="form-section">
+                <h4>Options</h4>
+                <div class="options-container">
+                    <input type="text" placeholder="Option 1" id="option-1">
+                    <input type="text" placeholder="Option 2" id="option-2">
+                    <input type="text" placeholder="Option 3" id="option-3">
+                    <input type="text" placeholder="Option 4" id="option-4">
+                </div>
+            </div>
+        
+            <div class="form-section">
+                <h4>Select Correct Answer</h4>
+                <select id="correct-answer">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+        
+            <div class="form-section">
+                <h4>Classify Question under Category</h4>
+                <select id="category">
+                    <option>Category 1</option>
+                    <option>Category 2</option>
+                    <option>Category 3</option>
+                </select>
+            </div>
+        
+            <div class="form-section">
+                <h4>Select Difficulty Level</h4>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <h4>Select Similar Queries</h4>
+                <select id="similar" multiple>
+                    <option value="1">Q 121</option>
+                    <option value="2">Q 122</option>
+                    <option value="3">Q 89</option>
+                    <option value="1">Q 21</option>
+                    <option value="2">Q 12</option>
+                    <option value="3">Q 8</option>
+                </select>
+            </div>            
+        
+            <button onclick="createQuery()">Create Query</button>
+        </div>        
+
+        <h1>Query Management</h1>
+        <div class="query-card-container">
+            <div class="query-card">
+                <h3>Query 1</h3>
+                <p>mio?</p>
+                <div class="query-options">
+                    <label>
+                        <input type="radio" name="query1" value="Paris">
+                        maaa
+                    </label>
+                    <label>
+                        <input type="radio" name="query1" value="London">
+                        meeee
+                    </label>
+                    <label>
+                        <input type="radio" name="query1" value="Berlin">
+                        miiii
+                    </label>
+                    <label>
+                        <input type="radio" name="query1" value="Madrid">
+                        moooo
+                    </label>
+                </div>
+                <button>Edit Query</button>
+            </div>
+            
+            <div class="query-card">
+                <h3>Query 2</h3>
+                <p>miawwwww?</p>
+                <div class="query-options">
+                    <label>
+                        <input type="radio" name="query2" value="Earth">
+                        miaw
+                    </label>
+                    <label>
+                        <input type="radio" name="query2" value="Mars">
+                        miawwwwww
+                    </label>
+                    <label>
+                        <input type="radio" name="query2" value="Jupiter">
+                        mew
+                    </label>
+                    <label>
+                        <input type="radio" name="query2" value="Saturn">
+                        meh
+                    </label>
+                </div>
+                <button>Edit Query</button>
+            </div>
+
+            <div class="query-card">
+                <h3>Query 3</h3>
+                <p>meowwwwwwwwwww?</p>
+                <div class="query-options">
+                    <label>
+                        <input type="radio" name="query3" value="Oxygen">
+                        oooooooooooooo
+                    </label>
+                    <label>
+                        <input type="radio" name="query3" value="Hydrogen">
+                        hhhhhhhhhhhh
+                    </label>
+                    <label>
+                        <input type="radio" name="query3" value="Carbon">
+                        cccccccccc
+                    </label>
+                    <label>
+                        <input type="radio" name="query3" value="Nitrogen">
+                        nnnnnnnnnnnn
+                    </label>
+                </div>
+                <button>Edit Query</button>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='designer.html'">Back to Designer</button>
+        <div class="toggle-container">
+            <input type="checkbox" id="night-mode-toggle" class="toggle-checkbox">
+            <label for="night-mode-toggle" class="toggle-label"></label>
+        </div> 
+    </div>
+</body>
+</html>

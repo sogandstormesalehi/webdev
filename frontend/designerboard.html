@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Designers List</h1>
+
+        <table class="scoreboard-table">
+            <thead>
+                <tr>
+                    <th>Designer</th>
+                    <th>Number of Queries</th>
+                    <th>Following Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Miaw</td>
+                    <td>500</td>
+                    <td><button class="follow-button" data-player="Player A">Unfollow</button></td>
+                </tr>
+                <tr>
+                    <td>:3</td>
+                    <td>480</td>
+                    <td><button class="follow-button" data-player="Player B">Follow</button></td>
+                </tr>
+                <tr>
+                    <td>Mio</td>
+                    <td>460</td>
+                    <td><button class="follow-button" data-player="Player C">Unfollow</button></td>
+                </tr>
+                <tr>
+                    <td>Meow</td>
+                    <td>440</td>
+                    <td><button class="follow-button" data-player="Player D">Follow</button></td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+        <button class="back-button" onclick="window.location.href='player.html'">Back to Player Dashboard</button>
+        <div class="toggle-container">
+            <input type="checkbox" id="night-mode-toggle" class="toggle-checkbox">
+            <label for="night-mode-toggle" class="toggle-label"></label>
+        </div>
+    </div>
+
+</body>
+</html>

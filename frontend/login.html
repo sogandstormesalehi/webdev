@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" id="login-form" action="#" method="post">
+            <h2>Login</h2>
+            <div class="form-group">
+                <p for="username" style="font-size: 1.2rem;">Username</p>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <p for="password" style="font-size: 1.2rem;">Password</p>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+
+        <p style="margin-top: 20px;">Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+        <div class="toggle-container">
+            <input type="checkbox" id="night-mode-toggle" class="toggle-checkbox">
+            <label for="night-mode-toggle" class="toggle-label"></label>
+        </div>
+    </div>
+</body>
+</html>

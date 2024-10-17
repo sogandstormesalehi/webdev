@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form" action="#" method="post">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <p for="new-username" style="font-size: 1.2rem;">Username</p>
+                <input type="text" id="new-username" name="new-username" required>
+            </div>
+            <div class="form-group">
+                <p for="email" style="font-size: 1.2rem;">Email</p>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <p for="new-password" style="font-size: 1.2rem;">Password</p>
+                <input type="password" id="new-password" name="new-password" required>
+            </div>
+            <div class="form-group">
+                <p style="font-size: 1.2rem;" for="role">Sign up as:</p>
+                <select id="role" name="role" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="Player">Player</option>
+                    <option value="Designer">Designer</option>
+                </select>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p style="margin-top: 20px;">Already have an account? <a href="login.html">Login</a></p>
+        <div class="toggle-container">
+            <input type="checkbox" id="night-mode-toggle" class="toggle-checkbox">
+            <label for="night-mode-toggle" class="toggle-label"></label>
+        </div> 
+    </div>
+</body>
+</html>
