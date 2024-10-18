@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Patrick Hand', cursive;
+    overflow-y: auto;
 }
 
 body {
@@ -29,8 +30,37 @@ body {
     text-align: center;
     margin: 20px auto;
 }
+h1 {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 1px 1px 0px #FFF4E5;
+    background: linear-gradient(145deg, #FFE5B4, #F4978E);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block; 
+    border: 2px solid #BFA181;
+    animation: dangling 3s ease-in-out infinite; 
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
 
-h1, h2 {
+@keyframes dangling {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+h2 {
     margin-bottom: 20px;
     color: #5A5A5A;
     text-shadow: 2px 2px #F5D1A1;
@@ -235,6 +265,23 @@ ul li {
     border: 2px dashed #BFA181;
 }
 
+body.night-mode ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+body.night-mode ul li {
+    background-color: #201f1f; 
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #e0e0e0;
+    border: 2px dashed #555; 
+}
+
+
 .scoreboard-table {
     width: 100%;
     border-collapse: collapse;
@@ -281,8 +328,18 @@ body.night-mode .back-button {
     background-color: #555;
 }
 
-body.night-mode h1, body.night-mode h2, body.night-mode h3 {
-    color: #f1c40f;
+body.night-mode h2{
+    color: #F4978E;
+    text-shadow: none;
+}
+
+body.night-mode h3 {
+    color: #f16f63;
+    text-shadow: none;
+}
+
+body.night-mode h1 {
+    color: #555;
 }
 
 body.night-mode input, body.night-mode select {
@@ -323,7 +380,6 @@ body.night-mode .query-card, body.night-mode .scoreboard-table {
     border-radius: 34px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .toggle-label::before {
@@ -432,4 +488,75 @@ body.night-mode select {
 
 .random-query-btn {
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .query-card {
+        width: 100%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .options-container input {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+    }
+
+    .toggle-container {
+        width: 50px;
+        height: 28px;
+    }
+
+    .toggle-label::before {
+        width: 22px;
+        height: 22px;
+    }
+
+    .scoreboard-table th, .scoreboard-table td {
+        font-size: 0.9rem;
+    }
+
+    .answered-query-card {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .answered-query-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .answered-query-card p {
+        font-size: 0.9rem;
+    }
+
+    .follow-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+        border-radius: 8px;
+    }
 }

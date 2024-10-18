@@ -26,6 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = 'player.html';
         });
     }
+    const signupForm = document.getElementById('signup-form');
+    if (signupForm) {
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            window.location.href = 'designer.html';
+        });
+    }
     const categorySelect = document.getElementById('category-select');
     const queryCards = Array.from(document.querySelectorAll('.query-card'));
     const randomQueryBtn = document.getElementById('random-query-btn');
@@ -45,8 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (visibleCards.length) {
             const randomCard = visibleCards[Math.floor(Math.random() * visibleCards.length)];
             randomCard.style.display = 'block';
-        } else {
-            alert('No queries available for the selected category.');
         }
     };
 
